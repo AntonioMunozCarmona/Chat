@@ -1,0 +1,10 @@
+{
+    "name": "Chat",
+    "version": "0.0.1",
+    "author": "Antonio Muñoz",
+    "license": "MIT",
+    "dependencies": {
+        "font-awesome": "*",
+        "normalize-css": "*"
+    }
+}
