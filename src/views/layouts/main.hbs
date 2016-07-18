@@ -1,7 +1,8 @@
+{{#compress}}
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    {{> site/metas }}
     <title>Chat</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css"/>
 </head>
@@ -11,5 +12,7 @@
     <div class="container">
         {{{ body }}}
     </div>
+    {{> development/livereload }}
 </body>
 </html>
+{{/compress}}

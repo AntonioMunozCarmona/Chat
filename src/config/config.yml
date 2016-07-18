@@ -2,11 +2,15 @@
 production: &default
   serverPort: 3333
   baseUrl: http://www.elChatdeAntonio.com
+  site:
+    title: El Chat de Antonio
+    description: web de pruebas
   views:
     engine: .hbs
     extension: .hbs
     layout: main
   html:
+    livereload: false
     minify: true
     css:
       stylusPrecompile: true
@@ -29,6 +33,7 @@ development:
   <<: *latest
   baseUrl: http://local.elChatdeAntonio.com
   html:
+    livereload: true
     minify: false
     css:
       stylusPrecompile: false

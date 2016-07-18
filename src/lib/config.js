@@ -1,16 +1,15 @@
-'use strict';
+import fs from 'fs';
+import yaml from 'js-yaml';
+import env from './env';
 
-var fs = require('fs');
-var yaml = require('js-yaml');
-var env = require('./env');
-var config = yaml.safeLoad(fs.readFileSync(__dirname + '/../config/config.yml', 'utf-8'));
-
-module.exports = getConfig;
+const config = yaml.safeLoad(
+  fs.readFileSync(__dirname + '/../config/config.yml', 'utf-8')
+);
 
 /**
-* Devuelve el ambiente seleccionado de configuracion
-**/
-
-function getConfig() {
-    return config[env().name] || {};
+ * Returns the selected environment configuration
+ */
+export default function getConfig() {
+  return config[env().name] || {};
 }
+
