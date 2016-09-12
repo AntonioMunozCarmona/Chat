@@ -1,9 +1,11 @@
-import express from'express';
+import express from 'express';
 const router = express.Router();
 
-/* GET users listing. */
+/* GET home page. */
 router.get('/', (req, res, next) => {
-    res.send('respond with a resource');
+  res.render('index', {
+    title: 'Home'
+  });
 });
 
 export default router;

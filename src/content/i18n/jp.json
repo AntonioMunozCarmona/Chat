@@ -1,0 +1,14 @@
+{
+  "Site": {
+    "language": "jp",
+    "title": "Making Developers - Japones",
+    "meta": {
+      "abstract": "Learn to code",
+      "description": "Learn to code",
+      "keywords": "HTML5, JavaScript, Node.js"
+    }
+  },
+  "Home": {
+    "welcome": "開発者の作成へようこそ"
+  }
+}
