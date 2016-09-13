@@ -6,7 +6,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AntonioMunozCarmona"
+    "url": "https://github.com/AntonioMunozCarmona/Chat.git"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp eslint",
+      "pre-push": "gulp test",
+      "post-merge": "npm install",
+      "post-rewrite": "npm install"
+    }
   },
   "dependencies": {
     "babel-eslint": "^6.1.2",
